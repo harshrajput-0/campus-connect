@@ -17,30 +17,34 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../public", "index.html"));
 });
 
+app.get("/index.html", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public", "index.html"));
+});
+
 // For about page
-app.get("/about", (req, res) => {
+app.get("/about.html", (req, res) => {
   res.sendFile(path.join(__dirname, "../public", "about.html"));
 });
 
 // For Dashboard page
-app.get("/dashboard", (req, res) => {
+app.get("/dashboard.html", (req, res) => {
   res.sendFile(path.join(__dirname, "../public", "dashboard.html"));
 });
 
 // For events page
-app.get("/events", (req, res) => {
+app.get("/events.html", (req, res) => {
   res.sendFile(path.join(__dirname, "../public", "events.html"));
 });
 
 
 // For about page
-app.get("/gallery", (req, res) => {
+app.get("/gallery.html", (req, res) => {
   res.sendFile(path.join(__dirname, "../public", "gallery.html"));
 });
 
 
 // For Event registration page
-app.get("/register", (req, res) => {
+app.get("/register.html", (req, res) => {
   res.sendFile(path.join(__dirname, "../public", "register.html"));
 });
 
