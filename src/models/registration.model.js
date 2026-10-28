@@ -17,13 +17,11 @@ const registrationSchema = new mongoose.Schema({
         required: true,
         trim: true,
     },
-    events: [
-        {
+    events: {
             type: mongoose.Schema.Types.ObjectId,
             ref: "Event",
             required: true,
-        }
-    ],
+        },
 }, { timestamps: true });
 
 export const Registration = mongoose.model("Registration", registrationSchema);
