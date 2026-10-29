@@ -4,7 +4,7 @@ import { Event } from "../models/event.model.js";
 // ----------------------------------------------------
 // FOR GETTING EVENT |=================================
 // ----------------------------------------------------
-const getEvents = async (req, res) => {
+export const getEvents = async (req, res) => {
     try {
         const { category } = req.query;
 
@@ -25,7 +25,7 @@ const getEvents = async (req, res) => {
 // ---------------------------------------------------------
 // FOR GETTING EVENT BY ID |================================
 // ---------------------------------------------------------
-const getEventById = async (req, res) => {
+export const getEventById = async (req, res) => {
     try {
         const event = await Event.findById(req.params.id);
 

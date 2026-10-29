@@ -3,6 +3,9 @@ import cors from "cors";
 import path from "path";
 import { fileURLToPath } from "url";
 
+import eventRoutes from "./routes/event.routes.js";
+import registrationRoutes from "./routes/registration.routes.js"
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -14,6 +17,11 @@ app.use(express.json());
 
 // Serve index.html on root
 app.use(express.static(path.join(__dirname, "../public")));
+
+
+// CONNECTING API ROUTES 
+app.use("/api/events", eventRoutes);
+app.use("/api/registrations", registrationRoutes);
 
 
 // Serve 404 page for everything else

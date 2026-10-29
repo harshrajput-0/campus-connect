@@ -34,7 +34,7 @@ export const registration = async (req, res) => {
     let event;
 
     if (!eventId) {
-        res.status(400).json({
+        return res.status(400).json({
             message: "Please select an event"
         });
     }
@@ -48,7 +48,7 @@ export const registration = async (req, res) => {
             event: eventId,
         });
 
-        res.status(201).json({ message: "Registered Successfully"}, registration);
+        res.status(201).json({ message: "Registered Successfully", registration});
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: "Could not save registration"});
