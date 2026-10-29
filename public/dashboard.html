@@ -1,12 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Registered event</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Student Dashboard | Campus Connect</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>This is where all registered events are loaded</h1>
+
+<body class="student-dashboard">
+
+  <!-- Navigation -->
+  <nav class="dashboard-nav">
+    <a class="dashboard-brand" href="index.html">
+      Campus <span>Connect</span>
+    </a>
+
+    <div class="dashboard-nav-links">
+      <a class="dashboard-nav-link active" href="dashboard.html">Dashboard</a>
+      <a class="dashboard-nav-link" href="events.html">Events</a>
+      <a class="dashboard-nav-link" href="gallery.html">Gallery</a>
+      <a class="dashboard-nav-cta" href="register.html">Register</a>
+    </div>
+  </nav>
+
+  <main class="dashboard-container">
+
+    <!-- Welcome section -->
+    <section class="dashboard-welcome">
+      <div>
+        <p class="dashboard-eyebrow">STUDENT PORTAL</p>
+        <h1>Welcome Student!</h1>
+        <p class="dashboard-welcome-text">
+          Discover campus activities, keep track of your registrations,
+          and make the most of your university experience.
+        </p>
+      </div>
+
+      <a href="events.html" class="dashboard-primary-button">
+        Explore Events <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
+    <!-- Summary cards -->
+    <section class="dashboard-stats" aria-label="Event summary">
+
+      <article class="dashboard-stat-card">
+        <div class="dashboard-stat-icon icon-blue" aria-hidden="true">▦</div>
+        <p class="dashboard-stat-label">Registered Events</p>
+        <p class="dashboard-stat-number">4</p>
+        <p class="dashboard-stat-note">Events you have joined</p>
+      </article>
+
+      <article class="dashboard-stat-card">
+        <div class="dashboard-stat-icon icon-sky" aria-hidden="true">◷</div>
+        <p class="dashboard-stat-label">Upcoming Events</p>
+        <p class="dashboard-stat-number">2</p>
+        <p class="dashboard-stat-note">Events coming up</p>
+      </article>
+
+      <article class="dashboard-stat-card">
+        <div class="dashboard-stat-icon icon-orange" aria-hidden="true">✓</div>
+        <p class="dashboard-stat-label">Completed Events</p>
+        <p class="dashboard-stat-number">2</p>
+        <p class="dashboard-stat-note">Events already attended</p>
+      </article>
+    </section>
+
+    <!-- Main dashboard content -->
+    <div class="dashboard-content-grid">
+
+      <!-- Registered events -->
+      <section class="dashboard-panel">
+        <div class="dashboard-section-heading">
+          <div>
+            <p class="dashboard-eyebrow dashboard-blue-text">YOUR ACTIVITIES</p>
+            <h2>My Registered Events</h2>
+          </div>
+
+          <a href="events.html" class="dashboard-text-link">View events →</a>
+        </div>
+
+        <div class="dashboard-event-list">
+
+          <article class="dashboard-event-row">
+            <div class="dashboard-event-date">
+              <span>EVENT</span>
+              <strong>01</strong>
+            </div>
+
+            <div class="dashboard-event-info">
+              <h3>Tech Innovation Day</h3>
+              <p>Technical · Campus Auditorium</p>
+            </div>
+
+            <span class="dashboard-status status-upcoming">Upcoming</span>
+          </article>
+
+          <article class="dashboard-event-row">
+            <div class="dashboard-event-date">
+              <span>EVENT</span>
+              <strong>02</strong>
+            </div>
+
+            <div class="dashboard-event-info">
+              <h3>Cultural Festival</h3>
+              <p>Cultural · Main Campus</p>
+            </div>
+
+            <span class="dashboard-status status-upcoming">Upcoming</span>
+          </article>
+
+          <article class="dashboard-event-row">
+            <div class="dashboard-event-date">
+              <span>EVENT</span>
+              <strong>03</strong>
+            </div>
+
+            <div class="dashboard-event-info">
+              <h3>Learning Workshop</h3>
+              <p>Workshop · Seminar Room</p>
+            </div>
+
+            <span class="dashboard-status status-completed">Completed</span>
+          </article>
+
+          <article class="dashboard-event-row">
+            <div class="dashboard-event-date">
+              <span>EVENT</span>
+              <strong>04</strong>
+            </div>
+
+            <div class="dashboard-event-info">
+              <h3>Campus Sports Day</h3>
+              <p>Sports · University Ground</p>
+            </div>
+
+            <span class="dashboard-status status-completed">Completed</span>
+          </article>
+
+        </div>
+
+        <p class="dashboard-demo-note">
+          Demo content: event names and statuses are examples.
+        </p>
+      </section>
+
+      <!-- Quick links and categories -->
+      <aside class="dashboard-side-column">
+
+        <section class="dashboard-panel dashboard-quick-panel">
+          <div class="dashboard-section-heading">
+            <div>
+              <p class="dashboard-eyebrow dashboard-blue-text">GET STARTED</p>
+              <h2>Quick Links</h2>
+            </div>
+          </div>
+
+          <a class="dashboard-quick-link" href="events.html">
+            <span class="dashboard-quick-icon">▦</span>
+            <span>
+              <strong>Browse Events</strong>
+              <small>Discover campus activities</small>
+            </span>
+            <span class="dashboard-arrow">→</span>
+          </a>
+
+          <a class="dashboard-quick-link" href="register.html">
+            <span class="dashboard-quick-icon">＋</span>
+            <span>
+              <strong>Register for an Event</strong>
+              <small>Join an upcoming activity</small>
+            </span>
+            <span class="dashboard-arrow">→</span>
+          </a>
+
+          <a class="dashboard-quick-link" href="gallery.html">
+            <span class="dashboard-quick-icon">▧</span>
+            <span>
+              <strong>View Gallery</strong>
+              <small>Explore campus memories</small>
+            </span>
+            <span class="dashboard-arrow">→</span>
+          </a>
+        </section>
+
+        <section class="dashboard-join-card">
+          <div class="dashboard-join-symbol" aria-hidden="true">✦</div>
+          <h2>Make Campus Life Count</h2>
+          <p>
+            Learn something new, meet people, and discover your next
+            favourite campus event.
+          </p>
+          <a href="events.html" class="dashboard-join-button">
+            Find Your Next Event
+          </a>
+        </section>
+
+      </aside>
+    </div>
+
+  </main>
+
+  <footer class="dashboard-footer">
+    <p>© 2026 Campus Connect. Connecting students through campus life.</p>
+  </footer>
+
 </body>
 </html>
