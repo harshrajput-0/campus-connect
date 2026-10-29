@@ -12,25 +12,6 @@ body {
     min-height: 100vh;
 }
 
-/* Website heading */
-header {
-    background: #01050a;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-    border-bottom: 5px solid #80caff;
-}
-
-header h1 {
-    font-size: 32px;
-    margin-bottom: 8px;
-}
-
-header p {
-    color: #d8edff;
-    font-size: 15px;
-}
-
 /* White registration form card */
 .registration-container {
     background: #ffffff;

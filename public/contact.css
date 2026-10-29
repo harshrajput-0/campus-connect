@@ -9,7 +9,7 @@
     --primary: #1673f0;
     --text: #1d2b45;
     --muted: #5b6b86;
-
+    --white: #fff;
 }
 
 
@@ -29,6 +29,7 @@ section {
 
 h2 {
     margin-bottom: 8px;
+    font-size: 900;
 }
 
 .left p {
@@ -102,4 +103,20 @@ form label textarea {
     border: 1px solid var(--muted);
     font-family: "Inter", sans-serif;
 
+}
+
+
+button {
+    padding: 9px 16px;
+    background-color: var(--primary);
+    border: none;
+    color: var(--white);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+@media (max-width: 720px) {
+    section {
+        grid-template-columns: 1fr;
+    }
 }

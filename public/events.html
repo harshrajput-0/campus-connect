@@ -1,12 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Events</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Campus Events | Campus Connect</title>
+
+  <link rel="stylesheet" href="./css/events.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Eventss Page, for events</h1>
+
+<body class="events-page">
+
+  <!-- Navigation -->
+  <nav class="events-nav">
+    <a href="index.html" class="events-brand"
+      Campus <span>Campus Connect</span>
+    </a>
+
+    <div class="events-nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="events.html" class="active">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="register.html" class="events-nav-button">Register</a>
+    </div>
+  </nav>
+
+  <!-- Page hero -->
+  <header class="events-hero">
+    <p class="events-eyebrow">DISCOVER YOUR CAMPUS</p>
+    <h1>Explore Campus Events</h1>
+    <p>
+      Find exciting activities, learn new skills, meet people,
+      and make the most of your campus experience.
+    </p>
+
+    <a href="#all-events" class="events-hero-button">
+      Explore Events <span aria-hidden="true">↓</span>
+    </a>
+  </header>
+
+  <main class="events-container" id="all-events">
+
+    <!-- Search -->
+    <section class="events-search-section">
+      <label for="eventSearch">Find your next event</label>
+
+      <div class="events-search-box">
+        <span aria-hidden="true">⌕</span>
+        <input
+          type="search"
+          id="eventSearch"
+          placeholder="Search event name, category, or location..."
+          autocomplete="off"
+        >
+      </div>
+      <p class="events-search-hint">
+        Search by event name, category, or location.
+      </p>
+    </section>
+
+    <!-- Heading and result count -->
+    <div class="events-section-heading">
+      <div>
+        <p class="events-eyebrow events-blue-text">WHAT'S HAPPENING</p>
+        <h2>Explore All Events</h2>
+        <p class="events-section-description">
+          Find something that interests you.
+        </p>
+      </div>
+
+      <span id="eventCount" class="events-count">6 events</span>
+    </div>
+
+    <!-- Category filters -->
+    <div class="events-filters" aria-label="Filter events by category">
+      <button type="button" class="events-filter active" data-category="All">
+        All Events
+      </button>
+
+      <button type="button" class="events-filter" data-category="Technical">
+        Technical
+      </button>
+
+      <button type="button" class="events-filter" data-category="Cultural">
+        Cultural
+      </button>
+
+      <button type="button" class="events-filter" data-category="Workshop">
+        Workshop
+      </button>
+
+      <button type="button" class="events-filter" data-category="Symposium">
+        Symposium
+      </button>
+
+      <button type="button" class="events-filter" data-category="Sports">
+        Sports
+      </button>
+    </div>
+
+    <!-- Event cards -->
+    <section class="events-grid" id="eventsGrid">
+
+      <!-- Technical -->
+      <article class="event-card" data-category="Technical">
+        <div class="event-image">
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80"
+            alt="Students collaborating on a technology project"
+            loading="lazy"
+          >
+          <span class="event-category">Technical</span>
+        </div>
+
+        <div class="event-card-body">
+          <div class="event-meta">
+            <span>◷ Date to be announced</span>
+          </div>
+
+          <h3>Tech Innovation Day</h3>
+          <p class="event-description">
+            Explore innovative ideas, technology projects, and creative
+            solutions developed by students.
+          </p>
+
+          <div class="event-details">
+            <span>⌖ Campus Auditorium</span>
+            <span>▦ Technology and Innovation</span>
+          </div>
+
+          <a href="register.html" class="event-register-button">
+            Register Now <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Cultural -->
+      <article class="event-card" data-category="Cultural">
+        <div class="event-image">
+          <img
+            src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=80"
+            alt="Crowd enjoying a live celebration"
+            loading="lazy"
+          >
+          <span class="event-category">Cultural</span>
+        </div>
+
+        <div class="event-card-body">
+          <div class="event-meta">
+            <span>◷ Date to be announced</span>
+          </div>
+
+          <h3>Cultural Festival</h3>
+          <p class="event-description">
+            Celebrate cultural traditions, music, performances, food,
+            and the diversity of campus life.
+          </p>
+
+          <div class="event-details">
+            <span>⌖ Main Campus</span>
+            <span>▦ Culture and Entertainment</span>
+          </div>
+
+          <a href="register.html" class="event-register-button">
+            Register Now <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Workshop -->
+      <article class="event-card" data-category="Workshop">
+        <div class="event-image">
+          <img
+            src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=900&q=80"
+            alt="Instructor leading a classroom learning session"
+            loading="lazy"
+          >
+          <span class="event-category">Workshop</span>
+        </div>
+
+        <div class="event-card-body">
+          <div class="event-meta">
+            <span>◷ Date to be announced</span>
+          </div>
+
+          <h3>Skills Development Workshop</h3>
+          <p class="event-description">
+            Take part in an interactive learning session and develop
+            useful academic and professional skills.
+          </p>
+
+          <div class="event-details">
+            <span>⌖ Seminar Room</span>
+            <span>▦ Learning and Development</span>
+          </div>
+
+          <a href="register.html" class="event-register-button">
+            Register Now <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Symposium -->
+      <article class="event-card" data-category="Symposium">
+        <div class="event-image">
+          <img
+            src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=900&q=80"
+            alt="Speaker presenting ideas to a conference audience"
+            loading="lazy"
+          >
+          <span class="event-category">Symposium</span>
+        </div>
+
+        <div class="event-card-body">
+          <div class="event-meta">
+            <span>◷ Date to be announced</span>
+          </div>
+
+          <h3>Academic Symposium</h3>
+          <p class="event-description">
+            Exchange knowledge, discuss research, and hear fresh
+            perspectives from speakers and fellow students.
+          </p>
+
+          <div class="event-details">
+            <span>⌖ Conference Hall</span>
+            <span>▦ Research and Discussion</span>
+          </div>
+
+          <a href="register.html" class="event-register-button">
+            Register Now <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Sports -->
+      <article class="event-card" data-category="Sports">
+        <div class="event-image">
+          <img
+            src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80"
+            alt="Athletes competing in a running event"
+            loading="lazy"
+          >
+          <span class="event-category">Sports</span>
+        </div>
+
+        <div class="event-card-body">
+          <div class="event-meta">
+            <span>◷ Date to be announced</span>
+          </div>
+
+          <h3>Campus Sports Day</h3>
+          <p class="event-description">
+            Show your team spirit, take part in sporting activities,
+            and enjoy a day of friendly competition.
+          </p>
+
+          <div class="event-details">
+            <span>⌖ University Ground</span>
+            <span>▦ Sports and Recreation</span>
+          </div>
+
+          <a href="register.html" class="event-register-button">
+            Register Now <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Technical -->
+      <article class="event-card" data-category="Technical">
+        <div class="event-image">
+          <img
+            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80"
+            alt="University students collaborating on a project"
+            loading="lazy"
+          >
+          <span class="event-category">Technical</span>
+        </div>
+
+        <div class="event-card-body">
+          <div class="event-meta">
+            <span>◷ Date to be announced</span>
+          </div>
+
+          <h3>Student Project Showcase</h3>
+          <p class="event-description">
+            Discover student projects, share creative solutions,
+            and get inspired by new ideas.
+          </p>
+
+          <div class="event-details">
+            <span>⌖ Innovation Lab</span>
+            <span>▦ Student Projects</span>
+          </div>
+
+          <a href="register.html" class="event-register-button">
+            Register Now <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Empty search result -->
+    <p id="eventsEmpty" class="events-empty" hidden>
+      No events found. Try another search or category.
+    </p>
+
+    <!-- Bottom call to action -->
+    <section class="events-bottom-cta">
+      <div>
+        <p class="events-eyebrow">YOUR CAMPUS JOURNEY</p>
+        <h2>Ready to Get Involved?</h2>
+        <p>Choose an event, meet new people, and make new memories.</p>
+      </div>
+
+      <a href="register.html" class="events-bottom-button">
+        Join an Event
+      </a>
+    </section>
+
+  </main>
+
+
+
+  <script>
+    const eventSearch = document.getElementById("eventSearch");
+    const eventCards = document.querySelectorAll(".event-card");
+    const eventFilters = document.querySelectorAll(".events-filter");
+    const eventsEmpty = document.getElementById("eventsEmpty");
+    const eventCount = document.getElementById("eventCount");
+
+    let selectedEventCategory = "All";
+
+    function filterEvents() {
+      const searchText = eventSearch.value.trim().toLowerCase();
+      let visibleEvents = 0;
+
+      eventCards.forEach(function (card) {
+        const category = card.dataset.category;
+        const searchableText = card.textContent.toLowerCase();
+
+        const matchesCategory =
+          selectedEventCategory === "All" ||
+          category === selectedEventCategory;
+
+        const matchesSearch = searchableText.includes(searchText);
+
+        const showCard = matchesCategory && matchesSearch;
+
+        card.hidden = !showCard;
+
+        if (showCard) {
+          visibleEvents++;
+        }
+      });
+
+      eventsEmpty.hidden = visibleEvents > 0;
+
+      eventCount.textContent =
+        visibleEvents + (visibleEvents === 1 ? " event" : " events");
+    }
+
+    eventFilters.forEach(function (button) {
+      button.addEventListener("click", function () {
+        selectedEventCategory = button.dataset.category;
+
+        eventFilters.forEach(function (filterButton) {
+          filterButton.classList.remove("active");
+        });
+
+        button.classList.add("active");
+        filterEvents();
+      });
+    });
+
+    eventSearch.addEventListener("input", filterEvents);
+  </script>
+
 </body>
 </html>
