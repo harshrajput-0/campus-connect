@@ -1,19 +1,19 @@
 .events-page {
-  --event-navy: #07224f;
-  --event-navy-2: #0b2f6b;
-  --event-blue: #1673f0;
-  --event-sky: #14a8f5;
-  --event-light: #eef4fc;
-  --event-light-2: #e3eefb;
-  --event-white: #ffffff;
-  --event-orange: #f59a0c;
-  --event-text: #1d2b45;
-  --event-muted: #5b6b86;
-  --event-line: #e2e9f3;
+  --navy: #07224f;
+  --navy-2: #0b2f6b;
+  --blue: #1673f0;
+  --sky: #14a8f5;
+  --light: #eef4fc;
+  --light-2: #e3eefb;
+  --white: #ffffff;
+  --orange: #f59a0c;
+  --text: #1d2b45;
+  --muted: #5b6b86;
+  --line: #e2e9f3;
 
   min-height: 100vh;
-  background: var(--event-light);
-  color: var(--event-text);
+  background: var(--light);
+  color: var(--text);
   font-family: 'Inter', system-ui, sans-serif;
 }
 
@@ -29,12 +29,12 @@
   justify-content: space-between;
   gap: 20px;
   padding: 17px max(4%, calc((100% - 1120px) / 2));
-  background: var(--event-white);
-  border-bottom: 1px solid var(--event-line);
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
 }
 
 .events-page .events-brand {
-  color: var(--event-navy);
+  color: var(--navy);
   text-decoration: none;
   font-family: 'Poppins', system-ui, sans-serif;
   font-size: 22px;
@@ -43,7 +43,7 @@
 }
 
 .events-page .events-brand span {
-  color: var(--event-blue);
+  color: var(--blue);
 }
 
 .events-page .events-nav-links {
@@ -56,7 +56,7 @@
 .events-page .events-nav-links a {
   padding: 10px 12px;
   border-radius: 7px;
-  color: var(--event-muted);
+  color: var(--muted);
   text-decoration: none;
   font-size: 13px;
   font-weight: 600;
@@ -65,18 +65,18 @@
 
 .events-page .events-nav-links a:hover,
 .events-page .events-nav-links a.active {
-  color: var(--event-blue);
-  background: var(--event-light);
+  color: var(--blue);
+  background: var(--light);
 }
 
 .events-page .events-nav-links a.events-nav-button {
-  color: var(--event-white);
-  background: var(--event-navy);
+  color: var(--white);
+  background: var(--navy);
   padding: 11px 17px;
 }
 
 .events-page .events-nav-links a.events-nav-button:hover {
-  background: var(--event-blue);
+  background: var(--blue);
 }
 
 /* Hero */
@@ -84,13 +84,13 @@
 .events-page .events-hero {
   padding: 58px 20px 62px;
   text-align: center;
-  color: var(--event-white);
+  color: var(--white);
   background: linear-gradient(
     130deg,
-    var(--event-navy),
-    var(--event-navy-2)
+    var(--navy),
+    var(--navy-2)
   );
-  border-bottom: 5px solid var(--event-sky);
+  border-bottom: 5px solid var(--sky);
 }
 
 .events-page .events-eyebrow {
@@ -125,8 +125,8 @@
   gap: 10px;
   padding: 12px 19px;
   border-radius: 8px;
-  background: var(--event-white);
-  color: var(--event-navy);
+  background: var(--white);
+  color: var(--navy);
   text-decoration: none;
   font-size: 13px;
   font-weight: 700;
@@ -134,7 +134,7 @@
 }
 
 .events-page .events-hero-button:hover {
-  background: var(--event-light-2);
+  background: var(--light-2);
   transform: translateY(-2px);
 }
 
@@ -156,7 +156,7 @@
 .events-page .events-search-section label {
   display: block;
   margin-bottom: 10px;
-  color: var(--event-navy);
+  color: var(--navy);
   font-size: 14px;
   font-weight: 700;
 }
@@ -168,17 +168,17 @@
   padding: 0 17px;
   border: 1px solid #cfdbed;
   border-radius: 12px;
-  background: var(--event-white);
+  background: var(--white);
   box-shadow: 0 5px 18px rgba(7, 34, 79, 0.05);
 }
 
 .events-page .events-search-box:focus-within {
-  border-color: var(--event-blue);
+  border-color: var(--blue);
   box-shadow: 0 0 0 3px rgba(22, 115, 240, 0.12);
 }
 
 .events-page .events-search-box > span {
-  color: var(--event-blue);
+  color: var(--blue);
   font-size: 27px;
   line-height: 1;
 }
@@ -192,7 +192,7 @@
   outline: none;
   box-shadow: none;
   background: transparent;
-  color: var(--event-text);
+  color: var(--text);
   font: inherit;
   font-size: 14px;
 }
@@ -209,7 +209,7 @@
 
 .events-page .events-search-hint {
   margin: 9px 2px 0;
-  color: var(--event-muted);
+  color: var(--muted);
   font-size: 12px;
 }
 
@@ -224,19 +224,19 @@
 }
 
 .events-page .events-blue-text {
-  color: var(--event-blue);
+  color: var(--blue);
 }
 
 .events-page .events-section-heading h2 {
   margin: 0 0 7px;
-  color: var(--event-navy);
+  color: var(--navy);
   font-family: 'Poppins', system-ui, sans-serif;
   font-size: clamp(24px, 3vw, 31px);
 }
 
 .events-page .events-section-description {
   margin: 0;
-  color: var(--event-muted);
+  color: var(--muted);
   font-size: 13px;
   line-height: 1.7;
 }
@@ -244,7 +244,7 @@
 .events-page .events-count {
   flex-shrink: 0;
   margin-bottom: 4px;
-  color: var(--event-muted);
+  color: var(--muted);
   font-size: 12px;
   white-space: nowrap;
 }
@@ -263,8 +263,8 @@
   padding: 10px 17px;
   border: 1px solid #cddbef;
   border-radius: 25px;
-  background: var(--event-white);
-  color: var(--event-navy);
+  background: var(--white);
+  color: var(--navy);
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 12px;
   font-weight: 600;
@@ -274,9 +274,9 @@
 
 .events-page .events-filter:hover,
 .events-page .events-filter.active {
-  border-color: var(--event-navy);
-  background: var(--event-navy);
-  color: var(--event-white);
+  border-color: var(--navy);
+  background: var(--navy);
+  color: var(--white);
 }
 
 /* Event grid */
@@ -293,9 +293,9 @@
   flex-direction: column;
   min-width: 0;
   overflow: hidden;
-  border: 1px solid var(--event-line);
+  border: 1px solid var(--line);
   border-radius: 14px;
-  background: var(--event-white);
+  background: var(--white);
   box-shadow: 0 5px 18px rgba(7, 34, 79, 0.05);
   transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -313,7 +313,7 @@
   position: relative;
   height: 205px;
   overflow: hidden;
-  background: var(--event-light-2);
+  background: var(--light-2);
 }
 
 .events-page .event-image img {
@@ -334,8 +334,8 @@
   left: 13px;
   padding: 7px 11px;
   border-radius: 20px;
-  background: var(--event-white);
-  color: var(--event-navy);
+  background: var(--white);
+  color: var(--navy);
   font-size: 11px;
   font-weight: 700;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -352,14 +352,14 @@
 
 .events-page .event-meta {
   margin-bottom: 10px;
-  color: var(--event-blue);
+  color: var(--blue);
   font-size: 11px;
   font-weight: 600;
 }
 
 .events-page .event-card-body h3 {
   margin: 0 0 10px;
-  color: var(--event-navy);
+  color: var(--navy);
   font-family: 'Poppins', system-ui, sans-serif;
   font-size: 17px;
   line-height: 1.5;
@@ -367,7 +367,7 @@
 
 .events-page .event-description {
   margin: 0 0 17px;
-  color: var(--event-muted);
+  color: var(--muted);
   font-size: 12px;
   line-height: 1.8;
 }
@@ -377,7 +377,7 @@
   flex-direction: column;
   gap: 9px;
   margin-bottom: 20px;
-  color: var(--event-muted);
+  color: var(--muted);
   font-size: 11px;
   line-height: 1.6;
 }
@@ -391,8 +391,8 @@
   margin-top: auto;
   padding: 12px 15px;
   border-radius: 7px;
-  background: var(--event-navy);
-  color: var(--event-white);
+  background: var(--navy);
+  color: var(--white);
   text-decoration: none;
   font-size: 12px;
   font-weight: 700;
@@ -400,7 +400,7 @@
 }
 
 .events-page .event-register-button:hover {
-  background: var(--event-blue);
+  background: var(--blue);
 }
 
 /* No matching events */
@@ -410,8 +410,8 @@
   padding: 35px 15px;
   border: 1px dashed #cddbef;
   border-radius: 12px;
-  background: var(--event-white);
-  color: var(--event-muted);
+  background: var(--white);
+  color: var(--muted);
   text-align: center;
   font-size: 13px;
 }
@@ -435,19 +435,19 @@
 }
 
 .events-page .events-bottom-cta .events-eyebrow {
-  color: var(--event-blue);
+  color: var(--blue);
 }
 
 .events-page .events-bottom-cta h2 {
   margin: 0 0 8px;
-  color: var(--event-navy);
+  color: var(--navy);
   font-family: 'Poppins', system-ui, sans-serif;
   font-size: 22px;
 }
 
 .events-page .events-bottom-cta p:not(.events-eyebrow) {
   margin: 0;
-  color: var(--event-muted);
+  color: var(--muted);
   font-size: 12px;
   line-height: 1.8;
 }
@@ -457,8 +457,8 @@
   flex-shrink: 0;
   padding: 13px 18px;
   border-radius: 7px;
-  background: var(--event-navy);
-  color: var(--event-white);
+  background: var(--navy);
+  color: var(--white);
   text-decoration: none;
   font-size: 12px;
   font-weight: 700;
@@ -466,14 +466,14 @@
 }
 
 .events-page .events-bottom-button:hover {
-  background: var(--event-blue);
+  background: var(--blue);
 }
 
 /* Footer */
 
 .events-page .events-footer {
   padding: 23px 15px;
-  background: var(--event-navy);
+  background: var(--navy);
   color: #dbeafe;
   text-align: center;
   font-size: 12px;

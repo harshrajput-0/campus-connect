@@ -9,7 +9,7 @@ import { EMAILREGEX, PHONEREGEX } from "../constants.js";
 // REGISTRATION: FOR REGISTERIGN EVENTS |=============================
 // -------------------------------------------------------------------
 export const registration = async (req, res) => {
-    const { studentName, email, phone, eventsId } = req.body; 
+    const { studentName, email, phone, eventId } = req.body; 
 
     // Validatiating fields 
     if (!studentName || studentName.trim().length < 5) {
@@ -40,6 +40,10 @@ export const registration = async (req, res) => {
     }
 
     try {
+        const event = await Event.findById(eventId);
+        if (!event) {
+            return res.status(400).json({ message: "Event not found" });
+        }
         // Create registration 
         const registration = await Registration.create({
             studentName,

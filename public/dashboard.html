@@ -47,27 +47,49 @@
       </a>
     </section>
 
+    <!-- Email lookup: registrations are not behind auth, so a student
+         finds their own registrations by the email they registered with -->
+    <section class="dashboard-panel" style="margin-bottom: 24px;">
+      <div class="dashboard-section-heading">
+        <div>
+          <p class="dashboard-eyebrow dashboard-blue-text">FIND YOUR EVENTS</p>
+          <h2>Look Up Your Registrations</h2>
+        </div>
+      </div>
+      <form id="lookupForm" style="display: flex; gap: 12px; flex-wrap: wrap;">
+        <input
+          type="email"
+          id="lookupEmail"
+          placeholder="Enter the email you registered with"
+          required
+          style="flex: 1; min-width: 220px; padding: 12px; border-radius: 7px; border: 1px solid #cbd5e1;"
+        >
+        <button type="submit" class="dashboard-primary-button" style="flex-shrink: 0;">Find My Events</button>
+      </form>
+      <p id="lookupMessage" class="dashboard-demo-note" hidden></p>
+    </section>
+
     <!-- Summary cards -->
     <section class="dashboard-stats" aria-label="Event summary">
 
       <article class="dashboard-stat-card">
         <div class="dashboard-stat-icon icon-blue" aria-hidden="true">▦</div>
         <p class="dashboard-stat-label">Registered Events</p>
-        <p class="dashboard-stat-number">4</p>
+        <p class="dashboard-stat-number" id="statRegistered">0</p>
         <p class="dashboard-stat-note">Events you have joined</p>
       </article>
 
       <article class="dashboard-stat-card">
         <div class="dashboard-stat-icon icon-sky" aria-hidden="true">◷</div>
         <p class="dashboard-stat-label">Upcoming Events</p>
-        <p class="dashboard-stat-number">2</p>
+        <p class="dashboard-stat-number" id="statUpcoming">0</p>
         <p class="dashboard-stat-note">Events coming up</p>
       </article>
 
       <article class="dashboard-stat-card">
         <div class="dashboard-stat-icon icon-orange" aria-hidden="true">✓</div>
         <p class="dashboard-stat-label">Completed Events</p>
-        <p class="dashboard-stat-number">2</p>
+        <p class="dashboard-stat-number" id="statCompleted">0</p>
         <p class="dashboard-stat-note">Events already attended</p>
       </article>
     </section>
@@ -86,69 +108,11 @@
           <a href="events.html" class="dashboard-text-link">View events →</a>
         </div>
 
-        <div class="dashboard-event-list">
-
-          <article class="dashboard-event-row">
-            <div class="dashboard-event-date">
-              <span>EVENT</span>
-              <strong>01</strong>
-            </div>
-
-            <div class="dashboard-event-info">
-              <h3>Tech Innovation Day</h3>
-              <p>Technical · Campus Auditorium</p>
-            </div>
-
-            <span class="dashboard-status status-upcoming">Upcoming</span>
-          </article>
-
-          <article class="dashboard-event-row">
-            <div class="dashboard-event-date">
-              <span>EVENT</span>
-              <strong>02</strong>
-            </div>
-
-            <div class="dashboard-event-info">
-              <h3>Cultural Festival</h3>
-              <p>Cultural · Main Campus</p>
-            </div>
-
-            <span class="dashboard-status status-upcoming">Upcoming</span>
-          </article>
-
-          <article class="dashboard-event-row">
-            <div class="dashboard-event-date">
-              <span>EVENT</span>
-              <strong>03</strong>
-            </div>
-
-            <div class="dashboard-event-info">
-              <h3>Learning Workshop</h3>
-              <p>Workshop · Seminar Room</p>
-            </div>
-
-            <span class="dashboard-status status-completed">Completed</span>
-          </article>
-
-          <article class="dashboard-event-row">
-            <div class="dashboard-event-date">
-              <span>EVENT</span>
-              <strong>04</strong>
-            </div>
-
-            <div class="dashboard-event-info">
-              <h3>Campus Sports Day</h3>
-              <p>Sports · University Ground</p>
-            </div>
-
-            <span class="dashboard-status status-completed">Completed</span>
-          </article>
-
+        <div class="dashboard-event-list" id="registeredEventsList">
+          <p class="dashboard-demo-note">
+            Enter your email above to see the events you've registered for.
+          </p>
         </div>
-
-        <p class="dashboard-demo-note">
-          Demo content: event names and statuses are examples.
-        </p>
       </section>
 
       <!-- Quick links and categories -->
@@ -207,7 +171,8 @@
 
   </main>
 
-
+  <script src="./js/api.js"></script>
+  <script src="./js/dashboard.js"></script>
 
 </body>
 </html>

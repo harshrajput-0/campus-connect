@@ -1,19 +1,19 @@
 .student-dashboard {
-  --dash-navy: #07224f;
-  --dash-navy-2: #0b2f6b;
-  --dash-blue: #1673f0;
-  --dash-sky: #14a8f5;
-  --dash-light: #eef4fc;
-  --dash-light-2: #e3eefb;
-  --dash-white: #ffffff;
-  --dash-orange: #f59a0c;
-  --dash-text: #1d2b45;
-  --dash-muted: #5b6b86;
-  --dash-line: #e2e9f3;
+  --navy: #07224f;
+  --navy-2: #0b2f6b;
+  --blue: #1673f0;
+  --sky: #14a8f5;
+  --light: #eef4fc;
+  --light-2: #e3eefb;
+  --white: #ffffff;
+  --orange: #f59a0c;
+  --text: #1d2b45;
+  --muted: #5b6b86;
+  --line: #e2e9f3;
 
   min-height: 100vh;
-  background: var(--dash-light);
-  color: var(--dash-text);
+  background: var(--light);
+  color: var(--text);
   font-family: 'Inter', system-ui, sans-serif;
 }
 
@@ -29,12 +29,12 @@
   justify-content: space-between;
   gap: 24px;
   padding: 18px max(4%, calc((100% - 1120px) / 2));
-  background: var(--dash-white);
-  border-bottom: 1px solid var(--dash-line);
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
 }
 
 .student-dashboard .dashboard-brand {
-  color: var(--dash-navy);
+  color: var(--navy);
   text-decoration: none;
   font-family: 'Poppins', system-ui, sans-serif;
   font-size: 22px;
@@ -43,7 +43,7 @@
 }
 
 .student-dashboard .dashboard-brand span {
-  color: var(--dash-blue);
+  color: var(--blue);
 }
 
 .student-dashboard .dashboard-nav-links {
@@ -54,7 +54,7 @@
 }
 
 .student-dashboard .dashboard-nav-link {
-  color: var(--dash-muted);
+  color: var(--muted);
   text-decoration: none;
   padding: 10px 12px;
   border-radius: 7px;
@@ -65,13 +65,13 @@
 
 .student-dashboard .dashboard-nav-link:hover,
 .student-dashboard .dashboard-nav-link.active {
-  color: var(--dash-blue);
-  background: var(--dash-light);
+  color: var(--blue);
+  background: var(--light);
 }
 
 .student-dashboard .dashboard-nav-cta {
-  color: var(--dash-white);
-  background: var(--dash-navy);
+  color: var(--white);
+  background: var(--navy);
   text-decoration: none;
   padding: 11px 17px;
   border-radius: 7px;
@@ -81,7 +81,7 @@
 }
 
 .student-dashboard .dashboard-nav-cta:hover {
-  background: var(--dash-navy);
+  background: var(--navy);
 }
 
 /* Main container */
@@ -101,8 +101,8 @@
   gap: 28px;
   padding: 34px;
   border-radius: 16px;
-  background: linear-gradient(120deg, var(--dash-navy), var(--dash-navy-2));
-  color: var(--dash-white);
+  background: linear-gradient(120deg, var(--navy), var(--navy-2));
+  color: var(--white);
   box-shadow: 0 8px 25px rgba(7, 34, 79, 0.12);
 }
 
@@ -140,8 +140,8 @@
   flex-shrink: 0;
   padding: 13px 18px;
   border-radius: 8px;
-  background: var(--dash-white);
-  color: var(--dash-navy);
+  background: var(--white);
+  color: var(--navy);
   text-decoration: none;
   font-size: 13px;
   font-weight: 700;
@@ -149,7 +149,7 @@
 }
 
 .student-dashboard .dashboard-primary-button:hover {
-  background: var(--dash-light-2);
+  background: var(--light-2);
   transform: translateY(-2px);
 }
 
@@ -164,8 +164,8 @@
 
 .student-dashboard .dashboard-stat-card {
   padding: 23px;
-  background: var(--dash-white);
-  border: 1px solid var(--dash-line);
+  background: var(--white);
+  border: 1px solid var(--line);
   border-radius: 13px;
   box-shadow: 0 4px 15px rgba(7, 34, 79, 0.04);
 }
@@ -182,7 +182,7 @@
 }
 
 .student-dashboard .icon-blue {
-  color: var(--dash-blue);
+  color: var(--blue);
   background: #e7f0ff;
 }
 
@@ -197,14 +197,14 @@
 }
 
 .student-dashboard .dashboard-stat-label {
-  color: var(--dash-muted);
+  color: var(--muted);
   margin: 0 0 8px;
   font-size: 13px;
   font-weight: 600;
 }
 
 .student-dashboard .dashboard-stat-number {
-  color: var(--dash-navy);
+  color: var(--navy);
   margin: 0 0 7px;
   font-family: 'Poppins', system-ui, sans-serif;
   font-size: 32px;
@@ -230,8 +230,8 @@
 .student-dashboard .dashboard-panel {
   min-width: 0;
   padding: 25px;
-  background: var(--dash-white);
-  border: 1px solid var(--dash-line);
+  background: var(--white);
+  border: 1px solid var(--line);
   border-radius: 13px;
   box-shadow: 0 4px 15px rgba(7, 34, 79, 0.04);
 }
@@ -245,12 +245,12 @@
 }
 
 .student-dashboard .dashboard-blue-text {
-  color: var(--dash-blue);
+  color: var(--blue);
   margin-bottom: 7px;
 }
 
 .student-dashboard .dashboard-section-heading h2 {
-  color: var(--dash-navy);
+  color: var(--navy);
   margin: 0;
   font-family: 'Poppins', system-ui, sans-serif;
   font-size: 19px;
@@ -258,7 +258,7 @@
 }
 
 .student-dashboard .dashboard-text-link {
-  color: var(--dash-blue);
+  color: var(--blue);
   text-decoration: none;
   font-size: 12px;
   font-weight: 700;
@@ -276,7 +276,7 @@
   align-items: center;
   gap: 13px;
   padding: 17px 0;
-  border-bottom: 1px solid var(--dash-line);
+  border-bottom: 1px solid var(--line);
 }
 
 .student-dashboard .dashboard-event-row:first-child {
@@ -297,8 +297,8 @@
   width: 53px;
   height: 53px;
   border-radius: 10px;
-  background: var(--dash-light);
-  color: var(--dash-navy);
+  background: var(--light);
+  color: var(--navy);
 }
 
 .student-dashboard .dashboard-event-date span {
@@ -320,7 +320,7 @@
 
 .student-dashboard .dashboard-event-info h3 {
   margin: 0 0 6px;
-  color: var(--dash-navy);
+  color: var(--navy);
   font-size: 13px;
   font-weight: 700;
   line-height: 1.5;
@@ -328,7 +328,7 @@
 
 .student-dashboard .dashboard-event-info p {
   margin: 0;
-  color: var(--dash-muted);
+  color: var(--muted);
   font-size: 11px;
   line-height: 1.6;
 }
@@ -377,8 +377,8 @@
   align-items: center;
   gap: 12px;
   padding: 15px 0;
-  border-bottom: 1px solid var(--dash-line);
-  color: var(--dash-text);
+  border-bottom: 1px solid var(--line);
+  color: var(--text);
   text-decoration: none;
 }
 
@@ -388,7 +388,7 @@
 
 .student-dashboard .dashboard-quick-link:hover strong,
 .student-dashboard .dashboard-quick-link:hover .dashboard-arrow {
-  color: var(--dash-blue);
+  color: var(--blue);
 }
 
 .student-dashboard .dashboard-quick-icon {
@@ -398,8 +398,8 @@
   width: 39px;
   height: 39px;
   border-radius: 9px;
-  background: var(--dash-light);
-  color: var(--dash-blue);
+  background: var(--light);
+  color: var(--blue);
   font-size: 21px;
 }
 
@@ -411,13 +411,13 @@
 }
 
 .student-dashboard .dashboard-quick-link strong {
-  color: var(--dash-navy);
+  color: var(--navy);
   font-size: 12px;
   transition: color 0.2s;
 }
 
 .student-dashboard .dashboard-quick-link small {
-  color: var(--dash-muted);
+  color: var(--muted);
   font-size: 10px;
   line-height: 1.5;
 }
@@ -444,13 +444,13 @@
   height: 42px;
   margin-bottom: 17px;
   border-radius: 11px;
-  background: var(--dash-white);
-  color: var(--dash-blue);
+  background: var(--white);
+  color: var(--blue);
   font-size: 24px;
 }
 
 .student-dashboard .dashboard-join-card h2 {
-  color: var(--dash-navy);
+  color: var(--navy);
   margin: 0 0 10px;
   font-family: 'Poppins', system-ui, sans-serif;
   font-size: 18px;
@@ -458,7 +458,7 @@
 }
 
 .student-dashboard .dashboard-join-card p {
-  color: var(--dash-muted);
+  color: var(--muted);
   margin: 0 0 20px;
   font-size: 12px;
   line-height: 1.8;
@@ -468,8 +468,8 @@
   display: inline-block;
   padding: 11px 14px;
   border-radius: 7px;
-  background: var(--dash-navy);
-  color: var(--dash-white);
+  background: var(--navy);
+  color: var(--white);
   text-decoration: none;
   font-size: 12px;
   font-weight: 700;
@@ -477,14 +477,14 @@
 }
 
 .student-dashboard .dashboard-join-button:hover {
-  background: var(--dash-blue);
+  background: var(--blue);
 }
 
 /* Footer */
 
 .student-dashboard .dashboard-footer {
   padding: 23px 15px;
-  background: var(--dash-navy);
+  background: var(--navy);
   color: #dbeafe;
   text-align: center;
   font-size: 12px;
