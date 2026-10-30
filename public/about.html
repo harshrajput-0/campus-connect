@@ -7,10 +7,46 @@
       <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="./css/header-footer.css">
     <link rel="stylesheet" href="./css/about.css">
 </head>
 <body>
     
+    <header class="nav">
+      <div class="wrap nav__row">
+        <a href="index.html" class="logo" aria-label="CollegeEvents home">
+          <svg viewBox="0 0 48 44" width="52" height="48" aria-hidden="true">
+            <path d="M24 2 2 12l22 10 22-10z" fill="#fff" />
+            <path d="M11 21v11c0 3 6 7 13 7s13-4 13-7V21l-13 6z" fill="#1d8cf0" />
+            <path d="M42 14v14" stroke="#fff" stroke-width="2.5" stroke-linecap="round" />
+          </svg>
+          <span>College<b>Events</b></span>
+        </a>
+        <nav id="menu" class="nav__links" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="events.html">Events</a>
+          <a href="about.html" class="is-active">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+          <div class="nav__mobile-actions">
+            <a href="dashboard.html" class="btn btn--ghost">Login</a>
+            <a href="register.html" class="btn btn--primary">Register</a>
+          </div>
+        </nav>
+        <div class="nav__actions">
+          <button class="icon-btn" aria-label="Search">
+            <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2" />
+              <path d="m16 16 5 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+            </svg>
+          </button>
+          <a href="dashboard.html" class="btn btn--ghost">Login</a>
+          <a href="register.html" class="btn btn--primary">Register</a>
+        </div>
+        <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"
+          aria-controls="menu"><span></span><span></span><span></span></button>
+      </div>
+    </header>
 
     <!-- Hero Section -->
     <!-- <section class="hero" id="home">
@@ -136,13 +172,18 @@
         </p>
     </section>
 
-    <!-- Footer -->
-    <!-- <footer>
-        <h3>Greenfield Institute of Technology</h3>
-        <p>Learn Today, Lead Tomorrow.</p>
-        <p>© 2026 Greenfield Institute. Fictional project data.</p>
-    </footer> -->
+    <footer class="footer">
+      <div class="wrap footer__row">
+        <div><a href="index.html" class="logo logo--sm"><span>College<b>Events</b></span></a>
+          <p>Discover, join and celebrate campus life.</p>
+        </div>
+        <nav aria-label="Footer"><a href="index.html">Home</a><a href="events.html">Events</a><a
+            href="about.html">About</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></nav>
+        <p class="footer__copy">&copy; 2026 CollegeEvents. All rights reserved.</p>
+      </div>
+    </footer>
 
+      <script src="./js/nav.js"></script>
       <script src="./js/about.js"></script>
 
 </body>
