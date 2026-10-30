@@ -48,7 +48,7 @@ contactForm.addEventListener("submit", async function (e) {
   // Calling backend API
   try {
     await CampusConnectAPI.sendContactMessage({ name, email, phone, message });
-    showContactMessage("Thanks! Your message has been sent — we'll get back to you soon.", "success");
+    showContactMessage("Message sent! — we'll get back to you soon.", "success");
     contactForm.reset();
   } catch (err) {
     showContactMessage(err.message, "error");

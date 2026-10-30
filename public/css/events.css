@@ -389,6 +389,17 @@
   line-height: 1.6;
 }
 
+.events-page .event-details span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.events-page .event-icon {
+  flex-shrink: 0;
+  color: var(--blue);
+}
+
 .events-page .event-register-button {
   display: flex;
   align-items: center;
