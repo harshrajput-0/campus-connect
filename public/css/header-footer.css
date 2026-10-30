@@ -1,4 +1,15 @@
 /* SHARED HEADER AND FOOTER  */
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 :root {
   --navy: #07224f;
   --navy-2: #0b2f6b;
@@ -133,15 +144,6 @@
   padding: 9px 28px
 }
 
-.icon-btn {
-  background: none;
-  border: 0;
-  color: var(--white);
-  cursor: pointer;
-  padding: 6px;
-  margin-right: 18px
-}
-
 .nav__mobile-actions {
   display: none
 }
@@ -181,6 +183,7 @@
 
 /* footer */
 .footer {
+  margin-top: auto;
   background: var(--navy);
   color: #c9d6ec;
   padding: 26px 0;

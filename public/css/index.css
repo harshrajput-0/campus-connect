@@ -28,6 +28,9 @@ html {
 
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: var(--font-body);
   color: var(--text);
   background: var(--white);
@@ -194,15 +197,6 @@ h3 {
 
 .nav__actions .btn {
   padding: 9px 28px
-}
-
-.icon-btn {
-  background: none;
-  border: 0;
-  color: var(--white);
-  cursor: pointer;
-  padding: 6px;
-  margin-right: 18px
 }
 
 .nav__mobile-actions {
@@ -580,6 +574,7 @@ h3 {
 
 /* footer */
 .footer {
+  margin-top: auto;
   background: var(--navy);
   color: #c9d6ec;
   padding: 26px 0;

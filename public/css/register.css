@@ -36,6 +36,7 @@ label {
 
 /* Text, email, and phone inputs */
 input {
+    box-sizing: border-box;
     width: 100%;
     padding: 13px;
     border: 1px solid #80caff;

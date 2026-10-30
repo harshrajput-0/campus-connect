@@ -42,4 +42,11 @@ const CampusConnectAPI = {
   getRegistrationsByEmail(email) {
     return apiRequest(`/registrations?email=${encodeURIComponent(email)}`);
   },
+
+  sendContactMessage(payload) {
+    return apiRequest(`/contact`, {
+      method: "POST",
+      body: JSON.stringify(payload),
+    });
+  },
 };
