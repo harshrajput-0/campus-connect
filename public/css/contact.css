@@ -6,22 +6,26 @@
 }
 
 :root {
+    --shaded-bg: #eef4fc;
     --primary: #1673f0;
     --text: #1d2b45;
     --muted: #5b6b86;
+    --white: #fff;
+  --border-clr: rgb(183, 183, 184);
+  --border: 1px solid var(--border-clr);
 
 }
 
 
 body {
     font-family: "Inter", sans-serif;
+    background-color: var(--shaded-bg);
 }
 
 section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 26px;
-    /* background-color: red; */
     max-width: 1200px;
     padding: 56px 22px;
     margin: auto;
@@ -29,6 +33,7 @@ section {
 
 h2 {
     margin-bottom: 8px;
+    font-size: 900;
 }
 
 .left p {
@@ -63,14 +68,15 @@ h2 {
 
 
 /* ============================== */
-.right {
-    background-color: #1673f0;
-}
+
 
 form {
     background-color: white;
     display: flex;
     flex-direction: column;
+    border: var(--border);
+    padding: 26px;
+    border-radius: 8px;
 }
 
 form label {
@@ -86,7 +92,8 @@ form label input {
     padding: 8px 12px;
     font-size: 16px;
     border-radius: 8px;
-    border: 1px solid var(--muted);
+    border: var(--border);
+    transition: all 0.2s ease;
 }
 
 form label input:focus-visible {
@@ -99,7 +106,27 @@ form label textarea {
     padding: 14px;
     font-size: 16px;
     border-radius: 8px;
-    border: 1px solid var(--muted);
+    border: var(--border);
     font-family: "Inter", sans-serif;
+    transition: all 0.2s ease;
+}
 
+form label textarea:focus-visible {
+    border-color: var(--muted);
+}
+
+
+button {
+    padding: 9px 16px;
+    background-color: var(--primary);
+    border: none;
+    color: var(--white);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+@media (max-width: 720px) {
+    section {
+        grid-template-columns: 1fr;
+    }
 }

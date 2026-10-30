@@ -246,7 +246,7 @@ h3 {
 .hero {
   position: relative;
   min-height: 365px;
-  background: var(--navy) url(images/hero.jpg) right center/auto 100% no-repeat;
+  background: var(--navy) url(../images/hero.jpg) right center/auto 100% no-repeat;
   display: flex;
   align-items: center;
   overflow: hidden
