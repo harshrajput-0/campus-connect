@@ -4,7 +4,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 import eventRoutes from "./routes/event.routes.js";
-import registrationRoutes from "./routes/registration.routes.js";
+import registrationRoutes from "./routes/registration.routes.js"
 import contactRoutes from "./routes/contact.routes.js"
 
 const __filename = fileURLToPath(import.meta.url);

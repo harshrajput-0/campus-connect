@@ -28,11 +28,11 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--font-body);
-  color: var(--text);
-    min-height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: var(--font-body);
+  color: var(--text);
   background: var(--white);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased
