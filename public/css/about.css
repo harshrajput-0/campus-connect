@@ -225,7 +225,8 @@ section {
     margin-bottom: 10px;
 }
 
-.event-content button {
+.event-content .event-register-btn {
+    display: block;
     margin-top: auto;
     padding: 11px 16px;
     background-color: var(--primary);
@@ -235,11 +236,14 @@ section {
     font-weight: 700;
     border: none;
     width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
     cursor: pointer;
     transition: background 0.2s;
 }
 
-.event-content button:hover {
+.event-content .event-register-btn:hover {
     background-color: var(--sky);
 }
 
